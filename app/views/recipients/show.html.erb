@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @recipient.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @recipient.last_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @recipient.email %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%= @recipient.phone %>
+</p>
+
+
+<%= link_to 'Edit', edit_recipient_path(@recipient) %> |
+<%= link_to 'Back', recipients_path %>
