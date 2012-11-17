@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121117182528) do
+ActiveRecord::Schema.define(:version => 20121117203654) do
 
   create_table "gifts", :force => true do |t|
     t.string   "vendor"
@@ -28,9 +28,8 @@ ActiveRecord::Schema.define(:version => 20121117182528) do
   end
 
   create_table "recipients", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
+    t.string   "r_name"
+    t.string   "r_email"
     t.string   "phone"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

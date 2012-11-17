@@ -42,8 +42,9 @@ class ThoughtsController < ApplicationController
   def create
     @thought = Thought.new(params[:thought])
 
+
     respond_to do |format|
-      if @thought.save
+      if @thought.save 
         format.html { redirect_to @thought, notice: 'Thought was successfully created.' }
         format.json { render json: @thought, status: :created, location: @thought }
       else
